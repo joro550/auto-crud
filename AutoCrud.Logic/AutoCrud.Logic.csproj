@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LanguageExt.Core" Version="4.4.2" />
+      <PackageReference Include="YamlDotNet" Version="13.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AutoCrud.Interfaces\AutoCrud.Interfaces.csproj" />
+      <ProjectReference Include="..\CsvPersistence\CsvPersistence.csproj" />
+    </ItemGroup>
+
+</Project>

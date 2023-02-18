@@ -1,0 +1,9 @@
+﻿kind: Persistence
+metadata: 
+  name: customers-csv
+spec:
+  type: csv
+  version: v1
+  metadata:
+    fileName: "customers.csv"
+    separator: ","

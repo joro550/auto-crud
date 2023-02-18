@@ -1,0 +1,9 @@
+﻿kind: Persistence
+metadata: 
+  name: sql-server
+spec:
+  type: ms-sql
+  version: v1
+  metadata:
+    connectionString: localhost
+    schema: dbo
