@@ -1,5 +1,5 @@
 ﻿using AutoCrud.Interfaces;
-using AutoCrud.Interfaces.Models;
+using CsvPersistence.Models;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
@@ -21,21 +21,4 @@ public class CsvPersistenceLoader : IPersistenceLoader
         var fileConfig = deserializer.Deserialize<CsvPersistenceComponentConfig>(config);
         return new CsvPersistence(fileConfig.Spec.Metadata);
     }
-}
-
-
-public sealed class CsvPersistenceComponentConfig : ComponentHeader
-{
-    public CsvPersistenceSpecificationConfig Spec { get; set; } = new();
-}
-
-public sealed class CsvPersistenceSpecificationConfig : PersistenceSpecification
-{
-    public CsvPersistenceMetadata Metadata { get; set; } = new();
-}
-
-public sealed class CsvPersistenceMetadata
-{
-    public string FileName { get; set; } = string.Empty;
-    public string Separator { get; set; } = string.Empty;
 }

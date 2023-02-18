@@ -1,4 +1,5 @@
 ﻿using AutoCrud.Interfaces;
+using CsvPersistence.Models;
 
 namespace CsvPersistence;
 

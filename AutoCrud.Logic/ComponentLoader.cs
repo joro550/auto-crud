@@ -1,7 +1,6 @@
-﻿using AutoCrud.Interfaces;
-using AutoCrud.Interfaces.Models;
-using AutoCrud.Logic.Loaders;
+﻿using AutoCrud.Logic.Loaders;
 using YamlDotNet.Serialization;
+using AutoCrud.Interfaces.Models;
 using YamlDotNet.Serialization.NamingConventions;
 
 namespace AutoCrud.Logic;
